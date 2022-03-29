@@ -19,11 +19,22 @@ The WebApi has been targeted for .NET 6
 
 Folder structure:
 
-I have implemented an Hexagonal/Clean Architecture approach to organize the Artifacts/Projects.
+I have implemented an Hexagonal/Clean Architecture approach to organize the Artifacts/Projects and as such:
+- Domain Layer
+- Application Layer
+   - Ports definition (interfaces betwween application and adapters)
+   - Services implementation
+ - Adapters
+   -  Persistence
+   -  WebApi
+- Configuration
+   -  Mostly in WebApi project.
+
 - There are 2 projects for tests: 
    - Integrations tests.
    - Unit tests.
  Both using some third party libraries: FluentAssertions, Moq, XUnit. 
+
 
 I did not include a database interaction for simplicity, and I used some dummy data local.
 I chose JWT Bearer as authorization process. As indicated in the code comments, the encrypted key was not saved in a secret or appsetting, it was just hardcoded for simplicity.
