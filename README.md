@@ -19,7 +19,7 @@ The WebApi has been targeted for .NET 6
 
 Folder structure:
 
-I have implemented an Hexagonal/Clean Architecture approach to organize the Artifacts/Projects and as such:
+I have implemented an HEXAGONAL/CLEAN ARCHITECTURE approach to organize the Artifacts/Projects and as such:
 - Domain Layer
 - Application Layer
    - Ports definition (interfaces betwween application and adapters)
